@@ -1,1 +1,1 @@
-Digital Sco Design 
+Digital Soc Design 
