@@ -5,6 +5,11 @@ Digital Soc Design
 
 DAY1
     Processor/SoC:
+    
+![processor peripherals](https://github.com/user-attachments/assets/538bb221-9f02-474e-9896-c19dc622d94a)
+
+
+    
 
     The central part of the system, which handles computation, control, and data processing. In a System on Chip (SoC), the processor integrates with various components like memory, interfaces, and other peripherals to create a complete system
 
