@@ -116,6 +116,8 @@ What is package and its types
     A] This package type is used for transistors, diodes, and regulators in power management applications.
     B] It has larger leads than the standard SOT23 to handle higher currents.
     C] Provides better heat dissipation due to its larger footprint.
+
+    
     
 What is PADS , DIE  , Core : 
 
@@ -145,6 +147,7 @@ D] Importance:
     Proper pad design is crucial for the reliability and performance of the chip.
 
 
+
 2. DIE (Semiconductor Die)
 
 A] Definition:
@@ -165,13 +168,17 @@ D] Importance:
     
     The die is the core functional part of the IC. Its layout and design dictate the performance of the chip.
 
+    
+
 3. Core (in IC Design)
 
     Definition:
 
        The core refers to the central part of the integrated circuit (IC) that contains the functional circuitry responsible for executing the intended tasks. It is the heart of the IC where the logic gates, transistors, and other components are placed.
+
    
-4. MACROS (Hard Macros & Soft Macros)
+   
+5. MACROS (Hard Macros & Soft Macros)
 
     ![MACROS](https://github.com/user-attachments/assets/6b7b21ed-ae98-4c01-8559-12a9d8e2917f)
 
@@ -201,6 +208,8 @@ D] Importance:
     
     Using hard or soft macros allows designers to integrate proven, reliable functionalities into their design while saving time and improving efficiency.
 
+    
+
 What is Foundry , Lithiography system , Photolithiography
     
 1] Foundry
@@ -220,6 +229,8 @@ b] Function:
 c] Importance:
         
         Foundries are essential to the semiconductor industry, as they allow fabless companies to focus on design, leaving manufacturing to specialized facilities. This separation of design and production enables faster innovation and cost savings.
+
+        
 
 2] Lithography System
 
@@ -243,6 +254,8 @@ c] Components:
 d] Importance:
         
         Lithography is a critical step in defining the size and shape of the circuit features on a chip. As semiconductor technology advances, achieving smaller, more precise features becomes increasingly difficult, making improvements in lithography systems essential.
+
+        
 
 3] Photolithography
 
