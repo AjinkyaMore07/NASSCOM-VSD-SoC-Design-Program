@@ -1,4 +1,4 @@
-Digital VLSI SoC Design and Planning
+# Digital VLSI SoC Design and Planning
 
 
 ![image](https://github.com/user-attachments/assets/fb7c3327-b07b-4e52-8ce2-7e123eada0a2)
@@ -284,44 +284,71 @@ d] Importance:
         
         Photolithography is critical for creating the small, intricate patterns on a silicon wafer that define a chip's functionality. It determines the feature size of transistors, interconnects, and other components, which directly affects the performance and power consumption of the final IC
 
-        
-Stopwatch Application Workflow
-This project illustrates the flow of a Stopwatch application from the user's interaction to hardware execution. The flow is divided into three main stages: Application Software, System Software, and Hardware.
+----------------------------------------------------------------------------------------------        
 
-1. Application Software (Stopwatch App)
-Example:
+
+# Stopwatch Application Workflow : 
+
+
+![apps_to_hardware](https://github.com/user-attachments/assets/556b3dd8-3836-4ff2-8f08-7ca66807fa9b)
+
+
+This project shows the flow of a Stopwatch application from the user's interaction to hardware execution. The flow is divided into three main stages: **Application Software**, **System Software**, and **Hardware**.
+
+## 1. Application Software (Stopwatch App)
+
+### Example:
 The Stopwatch application, running on a laptop or computer, allows users to interact with the system through simple actions such as:
+- **Start**
+- **Pause**
+- **Reset**
 
-Start
-Pause
-Reset
-Functionality:
+### Functionality:
 This application serves as the interface for the user, taking input commands and performing tasks like starting, pausing, or resetting the timer.
 
-2. System Software
+---
+
+## 2. System Software
+
 The system software bridges the application software and the hardware, ensuring smooth communication and efficient resource management.
 
-Components:
-Operating System (OS):
+### Components:
+- **Operating System (OS):**
+  - The OS manages key system resources such as the CPU, memory, and input/output devices.
+  - It is responsible for running the stopwatch application while handling background tasks like I/O operations and memory allocation.
+  - Common operating systems include macOS, Windows, and Linux.
 
-The OS manages key system resources such as the CPU, memory, and input/output devices.
-It is responsible for running the stopwatch application while handling background tasks like I/O operations and memory allocation.
-Common operating systems include macOS, Windows, and Linux.
-Compiler:
+- **Compiler:**
+  - The compiler translates the high-level code (e.g., C, C++, Java) from the application software into machine-level instructions.
+  - These instructions are packaged into an executable file (e.g., `.exe` for Windows).
 
-The compiler translates the high-level code (e.g., C, C++, Java) from the application software into machine-level instructions.
-These instructions are packaged into an executable file (e.g., .exe for Windows).
-Assembler:
+- **Assembler:**
+  - The assembler takes the compiler-generated instructions and converts them into binary machine code (e.g., `1010100101...`).
+  - This machine code consists of low-level instructions that can be directly executed by the hardware.
 
-The assembler takes the compiler-generated instructions and converts them into binary machine code (e.g., 1010100101...).
-This machine code consists of low-level instructions that can be directly executed by the hardware.
-3. Hardware
+---
+
+## 3. Hardware
+
 Once the machine code is prepared, the hardware executes it.
 
-Components:
-Processor:
+### Components:
+- **Processor:**
+  - The processor executes the machine code instructions and performs the necessary operations, such as updating the stopwatch display or starting/stopping the timer.
 
-The processor executes the machine code instructions and performs the necessary operations, such as updating the stopwatch display or starting/stopping the timer.
-Digital Circuits:
+- **Digital Circuits:**
+  - Supporting components, such as clocks (`Clk`), inputs (`Din`), and outputs (`Dout`), help manage data flow and timing during execution.
 
-Supporting components, such as clocks (Clk), inputs (Din), and outputs (Dout), help manage data flow and timing during execution.
+---
+
+## Summary of the Flow:
+
+1. The **user** interacts with the Stopwatch application (Application Software).
+2. The **operating system** (System Software) manages resources and communicates between the app and the hardware.
+3. The **compiler** translates high-level code (C, C++, Java) into low-level instructions.
+4. The **assembler** converts these instructions into binary machine code.
+5. The **hardware** executes the binary instructions to perform tasks like displaying the stopwatch or updating the time.
+
+
+-----------------------------------------------------------------------------------------------
+
