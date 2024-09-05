@@ -123,173 +123,139 @@ JTAG, UART0, QSPI1, I2C0, clk, reset (Left Side):
     C] Provides better heat dissipation due to its larger footprint.
 
     
-    
-What is PADS , DIE  , Core : 
+# _What is PADS, DIE, Core, and MACROS_
 
 ![PADS](https://github.com/user-attachments/assets/9a6ee6a6-dfa8-49a9-8423-fe687ffc99de)
 
+---
 
-1. PADS (Bonding Pads)
+## 1. PADS (Bonding Pads)
 
-A] Definition:
+### A] Definition:
+Pads are small metal areas located at the edges of a die that are used to establish electrical connections between the chip and the external circuitry (typically through bonding wires or bumps).
+
+### B] Purpose:
+They serve as the interface between the internal circuitry of the integrated circuit (IC) and the package pins or solder balls in a Ball Grid Array (BGA).
+
+### C] Types:
+- **Wire Bond Pads**: Used for wire bonding, where thin gold or aluminum wires are bonded between the pad and the package lead.
+- **Flip-Chip Pads**: Used for flip-chip technology where bumps or solder balls connect directly to the PCB.
+
+### D] Importance:
+- Critical for signal transmission, power supply, and ground connections between the IC and the outside world.
+- Proper pad design is crucial for the reliability and performance of the chip.
+
+---
+
+## 2. DIE (Semiconductor Die)
+
+### A] Definition:
+The die is the small piece of silicon wafer that contains the actual circuitry of the integrated circuit (IC) after the wafer has been fabricated and cut.
+
+### B] Purpose:
+The die holds the essential components such as transistors, resistors, capacitors, and other electronic components required to form the functional integrated circuit.
+
+### C] Fabrication:
+During semiconductor manufacturing, a large silicon wafer is processed to create thousands of identical ICs, each on a single die.  
+Once the wafer is complete, it is diced (cut) into individual dies, which are then packaged to form the final IC product.
+
+### D] Importance:
+The die is the core functional part of the IC. Its layout and design dictate the performance of the chip.
+
+---
+
+
+## 3. Core (in IC Design)
+
+### Definition:
+The core refers to the central part of the integrated circuit (IC) that contains the functional circuitry responsible for executing the intended tasks. It is the heart of the IC where the logic gates, transistors, and other components are placed.
+
+---
+
+## 4. MACROS (Hard Macros & Soft Macros)
+
+![PADS](https://github.com/user-attachments/assets/6b7b21ed-ae98-4c01-8559-12a9d8e2917f)
+
+### A] Definition:
+Macros refer to pre-designed blocks of functionality in an integrated circuit design, typically used in the design of complex systems like ASICs (Application-Specific Integrated Circuits) and SoCs (System on Chip).
+
+### B] Types:
+
+1. **Hard Macros**:  
+   Fixed design blocks with predefined placement and routing. They are technology-dependent, optimized for performance, and cannot be changed during placement or routing.  
+   - **Examples**: IP cores for memory (e.g., SRAM, ROM), standard cells like logic gates, and analog blocks like PLLs or ADCs.
+
+2. **Soft Macros**:  
+   Flexible design blocks described in RTL (Register Transfer Level), allowing modifications during the design process.  
+   - **Examples**: IP cores for processors, bus interfaces, or configurable logic blocks.
+
+### C] Purpose:
+Macros help in reusing pre-designed, pre-verified blocks to reduce the design time and effort for complex ICs.
+
+### D] Importance:
+Using hard or soft macros allows designers to integrate proven, reliable functionalities into their design while saving time and improving efficiency.
     
-    Pads are small metal areas located at the edges of a die that are used to establish electrical connections between the chip and the external circuitry (typically through bonding wires or bumps).
+# _Foundry, Lithography System, and Photolithography_
 
-B] Purpose:
-   
-    They serve as the interface between the internal circuitry of the integrated circuit (IC) and the package pins or solder balls in a Ball Grid Array (BGA).
+## 1. Foundry
 
-C] Types:
-    
-    Wire Bond Pads: Used for wire bonding, where thin gold or aluminum wires are bonded between the pad and the package lead.
+### a. Definition:
+A **foundry** is a manufacturing facility where silicon wafers are processed to fabricate integrated circuits (ICs). These facilities use highly specialized equipment to create semiconductor devices based on designs provided by fabless semiconductor companies.
 
-    Flip-Chip Pads: Used for flip-chip technology where bumps or solder balls connect directly to the PCB.
+### b. Function:
+The primary role of a foundry is to produce ICs by following a set of fabrication steps that include deposition, etching, doping, and photolithography. Foundries do not design chips themselves but manufacture them based on specifications provided by their clients (fabless companies).
 
-D] Importance:
-    
-    Critical for signal transmission, power supply, and ground connections between the IC and the outside world.
+### c. Examples of Foundries:
+- **TSMC** (Taiwan Semiconductor Manufacturing Company)
+- **Samsung Foundry**
+- **GlobalFoundries**
 
-    Proper pad design is crucial for the reliability and performance of the chip.
+### d. Importance:
+Foundries are essential to the semiconductor industry, as they allow fabless companies to focus on design, leaving manufacturing to specialized facilities. This separation of design and production enables faster innovation and cost savings.
 
+---
 
+## 2. Lithography System
 
-2. DIE (Semiconductor Die)
+### a. Definition:
+A **lithography system** is a machine used in semiconductor manufacturing to transfer intricate circuit patterns from a mask (or reticle) onto the surface of a silicon wafer using light or another form of energy.
 
-A] Definition:
-    
-    The die is the small piece of silicon wafer that contains the actual circuitry of the integrated circuit (IC) after the wafer has been fabricated and cut.
+### b. Types of Lithography:
+- **Optical Lithography**: Uses ultraviolet (UV) light to pattern wafers.
+- **Extreme Ultraviolet (EUV) Lithography**: Uses extremely short wavelengths of light (13.5 nm) to achieve finer resolution in advanced nodes (7nm or below).
+- **Electron Beam Lithography**: Uses a focused beam of electrons to write patterns directly on the wafer, commonly used for prototype or low-volume production.
 
-B] Purpose:
-    
-    The die holds the essential components such as transistors, resistors, capacitors, and other electronic components required to form the functional integrated circuit.
+### c. Components:
+- **Light Source**: Generates light or energy beams (e.g., UV or EUV light).
+- **Mask/Reticle**: Contains the pattern to be transferred to the wafer.
+- **Projection Lens**: Focuses and reduces the image of the mask onto the wafer surface.
 
-C] Fabrication:
-    
-    During semiconductor manufacturing, a large silicon wafer is processed to create thousands of identical ICs, each on a single die.
-        
-    Once the wafer is complete, it is diced (cut) into individual dies, which are then packaged to form the final IC product.
+### d. Importance:
+Lithography is a critical step in defining the size and shape of circuit features on a chip. As semiconductor technology advances, achieving smaller, more precise features becomes increasingly difficult, making improvements in lithography systems essential for future semiconductor technology.
 
-D] Importance:
-    
-    The die is the core functional part of the IC. Its layout and design dictate the performance of the chip.
+---
 
-    
+## 3. Photolithography
 
-3. Core (in IC Design)
+### a. Definition:
+**Photolithography** is a process used in semiconductor manufacturing to transfer geometric shapes from a photomask to the surface of a silicon wafer using light. It is a key part of the IC fabrication process, allowing patterns to be etched into the wafer to form transistors, interconnects, and other components.
 
-    Definition:
+### b. Steps in Photolithography:
 
-       The core refers to the central part of the integrated circuit (IC) that contains the functional circuitry responsible for executing the intended tasks. It is the heart of the IC where the logic gates, transistors, and other components are placed.
+1. **Coating the Wafer**: A layer of photoresist (a light-sensitive material) is applied to the wafer's surface.
+2. **Exposure**: The wafer is exposed to light through a mask, which contains the circuit pattern. The light causes chemical changes in the exposed parts of the photoresist.
+3. **Development**: The exposed wafer is developed, washing away either the exposed or unexposed parts of the photoresist (depending on whether a positive or negative photoresist is used).
+4. **Etching**: The pattern created by the remaining photoresist is used as a stencil to etch the desired patterns into the wafer.
+5. **Removal**: The remaining photoresist is removed, leaving the etched pattern on the wafer.
 
-   
-   
-5. MACROS (Hard Macros & Soft Macros)
+### c. Types of Photoresist:
+- **Positive Photoresist**: The exposed areas of the photoresist become soluble and are removed during development.
+- **Negative Photoresist**: The exposed areas become insoluble and remain after development, while the unexposed areas are removed.
 
-    ![MACROS](https://github.com/user-attachments/assets/6b7b21ed-ae98-4c01-8559-12a9d8e2917f)
+### d. Importance:
+Photolithography is critical for creating the small, intricate patterns on a silicon wafer that define a chip's functionality. It determines the feature size of transistors, interconnects, and other components, which directly affects the performance and power consumption of the final IC.
 
-
-A] Definition:
-
-    Macros refer to pre-designed blocks of functionality in an integrated circuit design, typically used in the design of complex systems like ASICs (Application-Specific Integrated Circuits) and SoCs (System on Chip).
-
-B] Types:
-    1] Hard Macros:
-    
-    Fixed design blocks with predefined placement and routing. They are technology-dependent, optimized for performance, and cannot be changed during placement or routing.
-            
-    Examples: IP cores for memory (e.g., SRAM, ROM), standard cells like logic gates, and analog blocks like PLLs or ADCs.
-        
-2] Soft Macros:
-    
-    Flexible design blocks described in RTL (Register Transfer Level), allowing modifications during the design process.
-            
-    Examples: IP cores for processors, bus interfaces, or configurable logic blocks.
-
-C] Purpose:
-    
-    Macros help in reusing pre-designed, pre-verified blocks to reduce the design time and effort for complex ICs.
-
-D] Importance:
-    
-    Using hard or soft macros allows designers to integrate proven, reliable functionalities into their design while saving time and improving efficiency.
-
-    
-
-What is Foundry , Lithiography system , Photolithiography
-    
-1] Foundry
-
-a] Definition:
-        
-        A foundry is a manufacturing facility where silicon wafers are processed to fabricate integrated circuits (ICs). These facilities use highly specialized equipment to create semiconductor devices based on designs provided by fabless semiconductor companies.
-
-b] Function:
-        
-        The primary role of a foundry is to produce ICs by following a set of fabrication steps that include deposition, etching, doping, and photolithography.
-        Foundries do not design chips themselves but manufacture them based on specifications provided by their clients (fabless companies).
-
-    Examples of Foundries:
-        TSMC (Taiwan Semiconductor Manufacturing Company), Samsung Foundry, and GlobalFoundries are well-known semiconductor foundries.
-
-c] Importance:
-        
-        Foundries are essential to the semiconductor industry, as they allow fabless companies to focus on design, leaving manufacturing to specialized facilities. This separation of design and production enables faster innovation and cost savings.
-
-        
-
-2] Lithography System
-
-a] Definition:
-        
-        A lithography system is a machine used in the semiconductor manufacturing process to transfer intricate circuit patterns from a mask (or reticle) onto the surface of a silicon wafer using light or another form of energy.
-
-b] Types of Lithography:
-        
-        Optical Lithography: Uses ultraviolet (UV) light to pattern wafers.
-        Extreme Ultraviolet (EUV) Lithography: Uses extremely short wavelengths of light (13.5 nm) to achieve finer resolution in advanced nodes like 7nm or below.
-        
-        Electron Beam Lithography: Uses a focused beam of electrons to write patterns directly on the wafer, commonly used for prototype or low-volume production.
-
-c] Components:
-        
-        Light Source: Generates light or energy beams (e.g., UV or EUV light).
-        Mask/Reticle: Contains the pattern to be transferred to the wafer.
-        Projection Lens: Focuses and reduces the image of the mask onto the wafer surface.
-
-d] Importance:
-        
-        Lithography is a critical step in defining the size and shape of the circuit features on a chip. As semiconductor technology advances, achieving smaller, more precise features becomes increasingly difficult, making improvements in lithography systems essential.
-
-        
-
-3] Photolithography
-
-a] Definition:
-      
-        Photolithography is a process used in semiconductor manufacturing to transfer geometric shapes from a photomask to the surface of a silicon wafer using light. It is a key part of the IC fabrication process, allowing patterns to be etched into the wafer to form transistors, interconnects, and other components.
-
-
-b] Steps in Photolithography: 
-
-![image](https://github.com/user-attachments/assets/b4f69868-b41f-4136-b16c-48788612a9e8)
-
-        
-        1] Coating the Wafer: A layer of photoresist (a light-sensitive material) is applied to the wafer's surface.
-        2] Exposure: The wafer is exposed to light through a mask, which contains the circuit pattern. The light causes chemical changes in the exposed parts of the photoresist.
-        3] Development: The exposed wafer is developed, washing away either the exposed or unexposed parts of the photoresist (depending on whether a positive or negative photoresist is used).
-        4] Etching: The pattern created by the remaining photoresist is used as a stencil to etch the desired patterns into the wafer.
-        5] Removal: The remaining photoresist is removed, leaving the etched pattern on the wafer.
-
-c] Types of Photoresist:
-        
-        1] Positive Photoresist: The exposed areas of the photoresist become soluble and are removed during development.
-        2] Negative Photoresist: The exposed areas become insoluble and remain after development, while the unexposed areas are removed.
-
-d] Importance:
-        
-        Photolithography is critical for creating the small, intricate patterns on a silicon wafer that define a chip's functionality. It determines the feature size of transistors, interconnects, and other components, which directly affects the performance and power consumption of the final IC
-
-----------------------------------------------------------------------------------------------        
+-------------------------------------------------------------------------------------------------        
 
 
 # Stopwatch Application Workflow : 
@@ -355,5 +321,149 @@ Once the machine code is prepared, the hardware executes it.
 5. The **hardware** executes the binary instructions to perform tasks like displaying the stopwatch or updating the time.
 
 
------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# _ASIC Design Flow Overview_
+
+![image](https://github.com/user-attachments/assets/abe34205-3877-47b0-832d-12a1ab76d5fb)
+
+1. _Register Transfer Level (RTL)_
+   
+  a. Starting Point:
+        The design is described using a high-level hardware description language like Verilog or VHDL.
+   
+  b. Function:
+        The RTL describes how data flows between registers and how the logic components operate within the design.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. _Synthesis (Synth)_
+
+    ![image](https://github.com/user-attachments/assets/d99c5088-c1b4-478f-964f-d72baad3b15e)
+
+Input: RTL description.
+Output: Gate-level netlist.
+Process:
+The synthesis tool converts the RTL design into a gate-level netlist, consisting of logic gates and flip-flops.
+The netlist is technology-mapped to the specific standard cells from the technology library (provided by the PDK, or Process Design Kit).
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. _Floor Planning + Power Planning (FP + PP)_
+
+   ![image](https://github.com/user-attachments/assets/ae647052-a92e-41ae-907c-df12c1688e96)
+  
+Input: Gate-level netlist.
+Process:
+This stage defines the physical layout of the design on the chip, positioning key blocks, I/O pins, and the power distribution network.
+Power planning ensures that every part of the design receives sufficient power for proper operation.
+
+ ![image](https://github.com/user-attachments/assets/fcbcf920-80af-4975-a903-67e50599234c)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. _Placement (Place)_
+
+![image](https://github.com/user-attachments/assets/1a18556f-1644-417b-8dc7-5ccf8199f9a7)
+
+Input: Gate-level netlist and floorplan.
+Process:
+Placement tools arrange the logic gates and flip-flops into specific physical locations on the chip.
+
+The goal is to minimize chip area, reduce wire lengths, and meet timing constraints.
+
+Placement is performed in two stages: Global Placement (where cells may overlap) and Detailed Placement (where cells are optimally placed following placement rules).
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5. _Clock Tree Synthesis (CTS)_
+
+   ![image](https://github.com/user-attachments/assets/17cce477-4879-4390-b546-4894ce7cee53)
+
+Process:
+A clock tree is synthesized to distribute the clock signal uniformly across the chip.
+This ensures that all flip-flops receive the clock signal simultaneously, avoiding clock skew issues and ensuring timing synchronization.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6. _Routing (Route)_
+   
+   ![image](https://github.com/user-attachments/assets/d226d089-6630-4d92-a832-dd21ea67158c)
+
+Process:
+Routing tools connect the placed gates using metal wires based on the netlist.
+This step must follow design rules, optimize performance, and address signal integrity concerns like crosstalk and electromagnetic interference.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7. _Sign-off_
+   
+Process:
+Sign-off is the final verification stage before the design goes to manufacturing. This includes:
+a. Timing closure: Ensuring the design meets timing constraints.
+
+b. Power analysis: Verifying that the power distribution is sufficient.
+
+c. Signal integrity checks: Checking for issues like crosstalk and electromigration.
+
+Only once the design passes all these checks can it proceed to fabrication.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+8. _GDSII (Graphic Data System II)_
+Output:
+The final step produces the GDSII file, which contains the full physical layout of the chip.
+This file is sent to the semiconductor foundry for fabrication.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# _OpenLaneThe Open-Source Infrastructure Platform for Silicon Development_
+
+![image](https://github.com/user-attachments/assets/713a0a85-651c-4ae3-a4cf-2f40297be282)
+
+OpenLane is an innovative silicon implementation platform that supports open-source tools such as Yosys, OpenROAD, Magic, KLayout, along with other open-source and proprietary utilities. Since 2020, OpenLane has been used for every Open MPW and chipIgnite shuttle. OpenLane integrates and abstracts the various steps of silicon implementation, allowing users to harden their projects using simple configuration files
+
+---
+# _OpenLANE ASIC Flow_
+
+![openlane flow](https://github.com/user-attachments/assets/85dfc54c-8f15-4479-8a9a-c04cfd7b30a7)
+
+
+
+## 1. Design RTL
+- The flow starts with the **Register Transfer Level (RTL)** design, described using a hardware description language like Verilog. The RTL describes the behavior of the circuit, including the movement of data between registers and the logic operations.
+
+## 2. RTL Synthesis (Yosys + abc)
+- **Input**: RTL description.
+- **Process**: The RTL is synthesized into a gate-level netlist using the Yosys synthesis tool and abc logic optimization tool.
+- **Output**: A gate-level netlist consisting of logic gates (AND, OR, etc.) and flip-flops, mapped to a specific technology library.
+
+## 3. Static Timing Analysis (STA) - OpenSTA
+- **Process**: Static Timing Analysis (STA) is performed using **OpenSTA** to verify that the design meets the required timing constraints.
+
+## 4. Design for Testability (DFT)
+- **Process**: Design for Testability (DFT) inserts test structures into the circuit to facilitate fault detection and improve the test coverage of the chip.
+
+## 5. Floorplanning, Placement, CTS, and Optimization (OpenROAD App)
+- **Floorplanning**: Defines the physical layout of key blocks, I/O pins, and the power distribution network.
+- **Placement**: Gates from the synthesized netlist are placed in specific locations on the chip to minimize area and wire length while meeting timing constraints.
+- **Clock Tree Synthesis (CTS)**: A clock tree is synthesized to distribute the clock signal evenly across the design, minimizing clock skew.
+- **Optimization**: Various optimization techniques are applied to improve the design in terms of power, performance, and area (PPA).
+- **Special Scripts**: Fake antenna diodes are inserted and swapped to handle antenna effects in the design.
+
+## 6. Logical Equivalence Check (LEC) - Yosys
+- **Process**: LEC ensures that the post-synthesis netlist functionally matches the original RTL design, guaranteeing no unintended changes have occurred during synthesis.
+
+## 7. Detailed Routing (TritonRoute)
+- **Process**: The detailed routing step connects the standard cells in the design according to the netlist, using metal layers for signal routing. TritonRoute ensures the routed design adheres to design rules and meets signal integrity requirements.
+
+## 8. RC Extraction and STA
+- **RC Extraction**: Extracts the parasitic resistance (R) and capacitance (C) of the routing, which can impact performance.
+- **STA (OpenSTA)**: Another round of STA is performed with the extracted parasitics to ensure timing closure.
+
+## 9. Physical Verification (Magic & Netgen)
+- **Process**: Physical verification is performed using **Magic** and **Netgen** tools. This ensures the design follows manufacturing design rules and that the layout matches the intended functionality.
+
+## 10. GDSII Generation (Magic)
+- **Output**: The final step produces the GDSII file, the standard format for IC layout, which is sent to the semiconductor foundry for chip fabrication.
+
 
