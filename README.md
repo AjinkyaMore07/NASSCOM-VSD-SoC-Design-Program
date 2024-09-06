@@ -535,3 +535,91 @@ OpenROAD automates several crucial steps in the physical implementation process:
      - **Global Routing**: Rough routing of connections.
      - **Detailed Routing**: Fine-tuned routing to create precise physical connections.
 ---
+
+# _RTL2GDS OpenLANE ASIC Flow Practical implementation_
+
+---
+Day 1 Labs
+---
+
+# Basic Linux Commands
+
+1. ## ls
+            Command: ls [options] [directory]
+            Description: Lists the contents of a directory. If no directory is specified, it               lists the contents of the current directory.
+            Options:
+            
+            -l: Displays detailed information (permissions, owner, size, etc.).
+            -a: Includes hidden files.
+            -r: Reverses the order of the listing.
+
+---
+2. ## pwd
+        Command: pwd
+        Description: Prints the full pathname of the current working directory.
+---
+
+3. ## mkdir
+        Command: mkdir [directory_name]
+        Description: Creates a new directory with the specified directory_name.
+---
+4. ## ls -ltr
+        Command: ls -ltr
+        Description: Lists the contents of the directory in long format (-l), sorted by                 modification time, in reverse order (-tr). This is useful for viewing the most                 recently modified files at the end of the list.
+---
+5. ## help
+        Command: help [command]
+        Description: Displays information about the built-in shell commands. If no command is          specified, it shows a list of all available commands.
+--- 
+
+6. ## man
+        Command: man [command]
+        Description: Displays the manual page for the specified command, providing detailed usage
+---
+7. ## cp
+        Command: cp [source] [destination]
+        Description: Copies files or directories from the source to the destination.
+---
+
+8. ## rm
+        Command: rm [file]
+        Description: Removes (deletes) the specified file or directory.
+--- 
+# _Steps for partical LAB 1:_ 
+---
+
+This guide provides step-by-step instructions to run OpenLane inside a virtual machine.
+
+## Steps
+
+1. **Go to Virtual Machine**
+   - Start your virtual machine if it's not already running.
+
+2. **Open the Command Line Terminal**
+   - Press `Ctrl + Alt + T` to open the terminal window.
+
+3. **Navigate to the OpenLane Directory**
+   - Use the `cd` command to move to the OpenLane directory:
+     ```bash
+     cd Desktop/work/tool/openlane_directory/openlane
+    ![cd](https://github.com/user-attachments/assets/96b2a08e-7796-4314-a1b9-7656e2091adf)
+     ```
+
+
+4. **Start Docker**
+   - In the command line, type `docker` to ensure Docker is running:
+     ```bash
+     docker
+     ```
+     
+
+5. **Run OpenLane in Interactive Mode**
+   - Type the following command to start OpenLane in interactive mode:
+     ```bash
+     ./flow.tcl -interactive
+    ![package](https://github.com/user-attachments/assets/0b46c9b7-1f20-467a-b0cc-156a35af3e51)
+
+     ```
+
+## Design Setup Stage 
+    prep -design picorv32a
