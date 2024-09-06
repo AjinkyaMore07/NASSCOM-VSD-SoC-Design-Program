@@ -1,4 +1,4 @@
-![prep](https://github.com/user-attachments/assets/86dbe9ba-f3a8-439e-87e0-d86ef81ccee0)# Digital VLSI SoC Design and Planning
+# Digital VLSI SoC Design and Planning
 ---
 Sky130 Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK
 SKY130_D1_SK1 - How to talk to computers
@@ -618,16 +618,15 @@ This guide provides step-by-step instructions to run OpenLane inside a virtual m
      ```bash
      ./flow.tcl -interactive
     ![package](https://github.com/user-attachments/assets/0b46c9b7-1f20-467a-b0cc-156a35af3e51)
-     ```
+   ```
+---
 
 ## Design Setup Stage 
     prep -design picorv32a
 ![prep](https://github.com/user-attachments/assets/9dd967dc-cac6-4f7c-b7d0-ae7068740ff5)
-
 ---
     run_synthesis 
 ![synthesis_successful](https://github.com/user-attachments/assets/92f26452-5677-4f5c-871a-84804bb05e0b)
-
 ---
 
  
@@ -635,8 +634,6 @@ This guide provides step-by-step instructions to run OpenLane inside a virtual m
  ![flop_ratio](https://github.com/user-attachments/assets/fa3216a4-9b26-41d8-b1c1-59b847f9fa0f)
 
  ![flop_ratio_percentage](https://github.com/user-attachments/assets/096c0133-6bc4-42f7-a984-45ce738743f1)
-
-
 ---
 
 # _DAY2_
