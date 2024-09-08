@@ -753,4 +753,9 @@ Types of Placement :
 
 # _LAB2 Placement_
 
+   Placement command : 
+           
+           run_placement
+  
+
         
