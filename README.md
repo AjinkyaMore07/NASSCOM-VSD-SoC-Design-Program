@@ -725,3 +725,32 @@ nand Standard cell
 ![nand2](https://github.com/user-attachments/assets/c2426189-08e0-4f0f-83f2-f2a0f5592fc2)
 
 ---
+
+Placement in 
+
+    Physical Design (PD) is an essential step in the VLSI design flow where the synthesized netlist is converted into a physical layout. 
+    In placement, one of the key stages in PD, the standard cells are positioned within the chip’s floorplan according to the timing, power, and area constraints. 
+    The goal is to minimize wirelength, ensure proper signal timing, and meet design rules for manufacturability.
+
+---
+
+
+Types of Placement :
+
+1. _Global Placement_ :
+
+        Global placement is very first stage of the placement where cells are placed inside the core area for the first time looking at the timing and congestion.
+       The goal is to generate a rough placement solution that provides a global view of the entire netlist, even if it violates some placement constraints such as cell overlap or routing constraints.
+       In this phase, cell overlap is allowed, and detailed design rules (like spacing or DRCs) are not enforced yet.
+
+---
+
+2. _Detailed Placement_
+
+        After the Global Placement, the next step is Detailed Placement, where the cell positions are fine-tuned, ensuring that all overlaps are removed, cells are aligned to the placement grid,
+       and design rules are strictly enforced. This step is critical to ensuring that the design is ready for routing.
+---
+
+# _LAB2 Placement_
+
+        
