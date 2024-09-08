@@ -703,9 +703,25 @@ View details of a cell:
     To check the details of any cell in the design, move the cursor over that cell and press S to select it.
     Open the tkcon window and enter the command what.
     The details of the selected cell will be displayed.
+
 ![magic2](https://github.com/user-attachments/assets/93fe039b-e811-4035-bf57-b40899a5017d)
 
 ![magic3](https://github.com/user-attachments/assets/d681c958-0ab9-4bf8-bdf9-d3f9b11f547d)
+---
 
+TAP Cell
+![tapcell](https://github.com/user-attachments/assets/92b62508-8974-4e17-bbe8-0a74e4811d1b)
 
+---
 
+BuF Standard cell 
+
+![buf](https://github.com/user-attachments/assets/cb54a907-f48c-47e4-a98b-3f9d467cb010)
+
+---
+
+nand Standard cell
+
+![nand2](https://github.com/user-attachments/assets/c2426189-08e0-4f0f-83f2-f2a0f5592fc2)
+
+---
