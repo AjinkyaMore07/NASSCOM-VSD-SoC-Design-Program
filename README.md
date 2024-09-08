@@ -697,4 +697,9 @@ View details of a cell:
     To check the details of any cell in the design, move the cursor over that cell and press S to select it.
     Open the tkcon window and enter the command what.
     The details of the selected cell will be displayed.
+![magic2](https://github.com/user-attachments/assets/93fe039b-e811-4035-bf57-b40899a5017d)
+
+![magic3](https://github.com/user-attachments/assets/d681c958-0ab9-4bf8-bdf9-d3f9b11f547d)
+
+
 
