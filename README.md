@@ -654,7 +654,13 @@ Theory :
 
        A core utilization of 0.5, for example, means that 50% of the core area is used for cell placement and 20 percent is available for routing.
 
-3. In OpenLane priority order for floorplan is :  1] PDK file that is used for Design.
+3. TAP Cell :
+
+        A tap cell (or well tap cell) is a special type of cell used in the physical design of integrated circuits (ICs) to maintain proper connectivity between the substrate (bulk silicon) and the power/ground network,            ensuring that the substrate or well is properly biased.
+
+        Prevent Latch-up: Tap cells are used to prevent a phenomenon called latch-up, where parasitic structures in CMOS technology can form a low-impedance path between the power and ground rails, leading to circuit               malfunction. By ensuring that the n-wells and p-wells are properly connected to the appropriate voltage levels (VDD or GND), tap cells help mitigate latch-up.
+   
+5. In OpenLane priority order for floorplan is :  1] PDK file that is used for Design.
                                                   2] Design file : config.tcl
                                                   3] System Default : floorplan.tcl
    
