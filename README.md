@@ -680,5 +680,21 @@ Now we need to enter into magic tool , so command is
 
 ![magic1](https://github.com/user-attachments/assets/779610c7-46e4-4ece-a23a-3fe0b8e7cbe6)
 
+# _Steps_
  
+ Align the design to the middle of the screen:
+
+    While in the GUI, first press S on the keyboard to select the whole design.
+    Then press V on the keyboard to align the design to the middle of the screen.
+
+Zoom to a particular area:
+
+    To zoom into a specific area, left-click the mouse to select the area you want to zoom into.
+    Then, right-click and press Z on the keyboard to zoom in on the selected area.
+
+View details of a cell:
+
+    To check the details of any cell in the design, move the cursor over that cell and press S to select it.
+    Open the tkcon window and enter the command what.
+    The details of the selected cell will be displayed.
 
