@@ -654,14 +654,31 @@ Theory :
 
        A core utilization of 0.5, for example, means that 50% of the core area is used for cell placement and 20 percent is available for routing.
 
-
+3. In OpenLane priority order for floorplan is :  1] PDK file that is used for Design.
+                                                  2] Design file : config.tcl
+                                                  3] System Default : floorplan.tcl
+   
 # _LAB2_ : 
     Screenshot of run_floorplan : 
     Step performed : 
         1. cd Desktop/work/tools/openlane_working_dir/openlane
+    
         2.    docker
         3.    ./flow.tcl -interactive 
         4.    prep -design picorv32a
         5.    run_synthesis
         6.    run_floorplan
+![1](https://github.com/user-attachments/assets/04bc144f-fba4-4164-8d8a-88f4866f4dd2)
+![3](https://github.com/user-attachments/assets/75dd1bd1-1336-4066-9e63-9774d7cb9e94)
+
+Floorplan def :
+![4](https://github.com/user-attachments/assets/4c7618a6-ada0-46e0-a447-6463060f1529)
+
+Now we need to enter into magic tool , so command is 
+
+    magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+
+![magic1](https://github.com/user-attachments/assets/779610c7-46e4-4ece-a23a-3fe0b8e7cbe6)
+
+ 
 
