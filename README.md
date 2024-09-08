@@ -636,9 +636,32 @@ This guide provides step-by-step instructions to run OpenLane inside a virtual m
  ![flop_ratio_percentage](https://github.com/user-attachments/assets/096c0133-6bc4-42f7-a984-45ce738743f1)
 ---
 
-# _DAY2_
+# _DAY2_Good floorplan vs bad floorplan and introduction to library cells_
 ---
 
+Theory : 
+
+1. ## Aspect Ratio (Ar): Aspect ratio refers to the ratio of a layout's height to its width.
+    Aspect Ratio = Width/Height
+​
+    If you specify a ratio of 1, the height and width are the same and therefore the core is a square.
+
+2. ## Utilization Factor : Utilization factor refers to the ratio of the area occupied by standard cells or logic elements to the total available area in a given design block or chip
+        Formula:
+        Utilization Factor =     Area occupied by standard cells
+                           ------------------------------------------------------
+                               Total available area in the block or chip
+
+       A core utilization of 0.5, for example, means that 50% of the core area is used for cell placement and 20 percent is available for routing.
 
 
- 
+# _LAB2_ : 
+    Screenshot of run_floorplan : 
+    Step performed : 
+        1. cd Desktop/work/tools/openlane_working_dir/openlane
+        2.    docker
+        3.    ./flow.tcl -interactive 
+        4.    prep -design picorv32a
+        5.    run_synthesis
+        6.    run_floorplan
+
