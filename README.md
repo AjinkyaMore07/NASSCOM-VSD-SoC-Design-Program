@@ -756,6 +756,24 @@ Types of Placement :
    Placement command : 
            
            run_placement
-  
+
+  _output_ :
+      
+![run_placement](https://github.com/user-attachments/assets/d1f64092-21ba-48a2-8ba2-5f72d42bb81b)
+
+---
+
+Generated placement def in magic
+    ![placement_magic](https://github.com/user-attachments/assets/40982159-3529-4788-8517-7ef04841893b)
+
+---
+
+Placement of Standard Cells:
+    ![placement_standardcells](https://github.com/user-attachments/assets/d8848157-fb16-419e-8c60-443d76d53fd1)
+
+---
+
+
+
 
         
