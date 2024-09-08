@@ -771,7 +771,17 @@ Generated placement def in magic
 Placement of Standard Cells:
     ![placement_standardcells](https://github.com/user-attachments/assets/d8848157-fb16-419e-8c60-443d76d53fd1)
 
+
 ---
+
+Placement of sky130_fd_sc_hd__mux2_1
+
+![palcement_mux](https://github.com/user-attachments/assets/eb2be77a-827e-4e9d-ac7a-fbde518b76ab)
+
+    
+---
+
+
 
 
 
