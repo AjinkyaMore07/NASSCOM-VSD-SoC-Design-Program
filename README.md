@@ -1,4 +1,4 @@
-# Digital VLSI SoC Design and Planning
+![ngspice1](https://github.com/user-attachments/assets/2995ff9e-995f-462c-8e99-4ee94dc37731)# Digital VLSI SoC Design and Planning
 ---
 Sky130 Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK
 SKY130_D1_SK1 - How to talk to computers
@@ -785,10 +785,81 @@ Placement of sky130_fd_sc_hd__mux2_1
 # _LAB3_Design library cell using Magic Layout and ngspice characterization_
 
 ---
+   
+       1.  Cloning custom inverter standard cell design from github repository:
+![cloning](https://github.com/user-attachments/assets/886171ba-bd17-44b4-bd94-3481c0494744)
 
+---
 
+       2. Copying magic tech file to vsdstdcelldesign
 
+![skytech130](https://github.com/user-attachments/assets/b5e5825c-fd40-4ac7-8d0d-7391e1180c3b)
 
+---
+       3. opening custom inverter in magic tool
+          
+         command :   magic -T sky130A.tech sky130_inv.mag &
+
+![magic -T sky](https://github.com/user-attachments/assets/f02c2f0c-1dc9-4e2c-8a25-e9301c8eedeb)
+
+---
+
+NMOS in custom inverter in magic tool : 
+![nmos](https://github.com/user-attachments/assets/d9b90fe4-7438-4f16-bc3d-4b8f11534c94)
+
+---
+
+PMOS in custom inverter in magic tool : 
+![pmos](https://github.com/user-attachments/assets/5c6649a1-f523-42dd-8589-fa59fd1a1054)
+
+---
+
+nwell 
+![nwell](https://github.com/user-attachments/assets/088f99f4-c19e-47d8-b02d-d94d8d37dfa5)
+
+---
+
+poly :
+![poly](https://github.com/user-attachments/assets/b5f52529-cde8-46e3-bf7b-4a64eab2eedd)
+
+---
+
+Spice extraction of inverter in magic.
+
+    commands follow :
+    1. pwd
+    2. extract all
+    3. ext2spice cthresh 0 rthresh 0
+    4. ext2spice
+
+![commands_run](https://github.com/user-attachments/assets/0e961af0-a4a8-4ad1-9e23-9f2fb2e53674)
+
+---
+
+Measuring layout Grid : 
+![box](https://github.com/user-attachments/assets/9d088bc6-0a8f-44bf-9ffe-5fda6cb64f49)
+
+---
+spice file
+![spice](https://github.com/user-attachments/assets/22668178-b1f7-45ac-b396-5c2a452e9564)
+
+---
+
+Download or install  ngspice 
+
+    sudo apt-get install ngspice
+
+command to run spice file
+
+    1. # Command to directly load spice file for simulation to ngspice
+          1.  ngspice sky130_inv.spice
+
+          2.  plot y vs time a 
+
+output : 
+
+![spiceoutput](https://github.com/user-attachments/assets/93e6abbc-80f5-4ffd-96b4-5864ae4224b7)
+![spicewaveform](https://github.com/user-attachments/assets/abf38cfa-485e-4949-8faf-26f7e1d250d4)
 
 
 
