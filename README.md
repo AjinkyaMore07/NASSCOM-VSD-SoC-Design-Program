@@ -782,6 +782,12 @@ Placement of sky130_fd_sc_hd__mux2_1
 ---
 
 
+# _LAB3_Design library cell using Magic Layout and ngspice characterization_
+
+---
+
+
+
 
 
 
