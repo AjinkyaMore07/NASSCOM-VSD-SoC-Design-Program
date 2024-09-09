@@ -1,4 +1,4 @@
-![ngspice1](https://github.com/user-attachments/assets/2995ff9e-995f-462c-8e99-4ee94dc37731)# Digital VLSI SoC Design and Planning
+# Digital VLSI SoC Design and Planning
 ---
 Sky130 Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK
 SKY130_D1_SK1 - How to talk to computers
