@@ -841,7 +841,8 @@ Measuring layout Grid :
 
 ---
 spice file
-![spice](https://github.com/user-attachments/assets/22668178-b1f7-45ac-b396-5c2a452e9564)
+![vim sky](https://github.com/user-attachments/assets/a8f63c6d-0b84-4bc4-8305-b034d1d9beed)
+
 
 ---
 
@@ -857,10 +858,84 @@ command to run spice file
           2.  plot y vs time a 
 
 output : 
+![output ngspice](https://github.com/user-attachments/assets/0e22fac0-2ee1-4145-8453-7041ece28c78)
 
-![spiceoutput](https://github.com/user-attachments/assets/93e6abbc-80f5-4ffd-96b4-5864ae4224b7)
-![spicewaveform](https://github.com/user-attachments/assets/abf38cfa-485e-4949-8faf-26f7e1d250d4)
+![waveform spice](https://github.com/user-attachments/assets/51076c93-717f-49cc-859a-bae110703c0a)
 
 
+---
 
+Rise Time 
+
+        
+        The rise transition time, or rise time, is the time it takes for a signal to transition from a low state (usually 22% of its maximum value) to a high state (usually 80% of its maximum value).
+        Calculate Rise Time:
+
+    Subtract the time at 10% from the time at 90% to get the rise time.
+
+            Rise Time = T80%−T20%
+
+            80 % of 3.3V is 2.64 
+            20 % of 3.3V is 0.66
+            
+![risetime](https://github.com/user-attachments/assets/584a19f1-a17f-4e01-9b64-67e9f0912361)
+
+_80 Percent of 3.3V is 2.64_
+
+![80%2 64](https://github.com/user-attachments/assets/229045cd-8a80-4e79-94e7-5151a9119c89)
+
+_20 Percent of 3.3V is 0.660_
+
+![80% 660](https://github.com/user-attachments/assets/f81af92a-6572-4805-b553-4d1ba589d6d9)
+
+# Rise Transition time = 6.16096 - 4.03964  = 2.12132ps
+![risetime calculation](https://github.com/user-attachments/assets/8f61236c-f1be-4c32-8e61-ad07e843092d)
+
+
+---
+
+Fall Time : 
+        
+        The fall time of a signal is the time it takes for the signal to change from a high voltage level (often 80% of the initial value) to a low voltage level (often 20% of the initial value).
+            
+        Calculate the fall time: Subtract the time at the 80% point from the time at the 20% point.
+
+            Fall Time=T80%−T20%
+
+_80 Percent of 3.3V is 2.64_
+
+![falltransition2 64 80%](https://github.com/user-attachments/assets/9e0372ec-acde-4ace-9cab-463a17197d23)
+
+_20 Percent of 3.3V is 0.660_
+![fall transition 20 % 0 66](https://github.com/user-attachments/assets/53eab6db-a824-44c9-bc52-cffb5a5b5b3d)
+
+# FAll Transition time = 2.09-2.03  = 0.03 = 30ps
+![fall 80-20](https://github.com/user-attachments/assets/39e194b1-30b1-4877-9662-d3a0690b355c)
+
+    
+---
+
+
+_Rise Cell Delay :_
+      
+       Rice Cell Delay= Tout50%​ − Tin50%​
+       Rice Cell delay =  2.12414 - 2.06000 =  0.06414 = 64.14ps
+![cell delay 50rise , fall](https://github.com/user-attachments/assets/98b93fbb-69c6-4952-b077-0d7b3d114009)
+
+![cell delay 50%](https://github.com/user-attachments/assets/d5facef0-18ef-47d8-b46b-a9a3acdfad84)
+
+---
+
+_Fall Cell Delay_
+
+         Fall Cell Delay = Tout 50% - Tin 50%
+                         = 4.02667 - 4.00483 
+                         = 0.02184
+                         = 21.84 ps
+![cellfalldelay terminal](https://github.com/user-attachments/assets/2cf260a3-106b-4c27-99d6-15bceb4740b5)
+
+![cellfalldelay](https://github.com/user-attachments/assets/6557fbf2-2aa4-45a3-b4f9-8706400e7446)
+
+
+---
 
