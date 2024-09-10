@@ -974,6 +974,19 @@ _load_poly_
 ![drc why](https://github.com/user-attachments/assets/633e3734-dfde-4c0b-b84c-71a7448bf79f)
 
 
+commands to enter :
+
+    Commands to run in tkcon window
+
+    1. To Load updated tech file
+        -> tech load sky130A.tech
+
+    2. re-run drc check to see updated drc errors
+        -> drc check
+
+    3. Selecting region displaying the new errors and getting the error messages 
+        -> drc why
+
 solving poly.2 error - Spacing of poly to poly
 
     Before correcting
@@ -986,3 +999,19 @@ solving poly.2 error - Spacing of poly to poly
 ---
 
 
+(nwell.4)
+	
+
+    All n-wells will contain metal-contacted tap (rule checks only for licon on tap) .
+
+    Incorrectly implemented nwell.4 rule no drc violation
+    
+    commands inserted in sky130A.tech file to update drc
+![nwelltapped](https://github.com/user-attachments/assets/1b0444c0-6211-4d8b-ae11-36bb3503bc68)
+
+![variants](https://github.com/user-attachments/assets/d0677ad3-143e-418e-b29b-f4f13b913322)
+
+
+
+    After correction showing drc error
+![nwell rmissing](https://github.com/user-attachments/assets/6b649f47-556a-4125-aea1-9530bb0c2e4f)
