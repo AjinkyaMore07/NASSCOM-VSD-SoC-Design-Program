@@ -961,3 +961,28 @@ _load_poly_
 ![loading poly](https://github.com/user-attachments/assets/f9c7deb0-a386-46d3-b6b0-944848bf7836)
 
 
+---
+
+# _DAY#_LAB6_to fix poly.9_
+
+    Poly resistor spacing to poly or spacing (no overlap) to diff/tap   0.480µm
+    
+    poly.9 rule no drc violation even though spacing < 0.48u
+
+![poly9error_before](https://github.com/user-attachments/assets/93decf87-6514-40e8-834c-5629a2f332a7)
+
+![drc why](https://github.com/user-attachments/assets/633e3734-dfde-4c0b-b84c-71a7448bf79f)
+
+
+solving poly.2 error - Spacing of poly to poly
+
+    Before correcting
+    
+![polyspacing 2](https://github.com/user-attachments/assets/8323eef5-b509-4e7d-a014-0a62832dba68)
+
+    after correcting
+![poly 2corrected](https://github.com/user-attachments/assets/1dd7445e-addd-4119-872f-748472af204b)
+
+---
+
+
