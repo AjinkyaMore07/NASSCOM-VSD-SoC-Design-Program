@@ -954,3 +954,10 @@ _Fall Cell Delay_
 
 
 ![magicrcfile](https://github.com/user-attachments/assets/9f82d770-ff02-47ca-8ae0-4a00926da5cf)
+
+---
+_load_poly_
+
+![loading poly](https://github.com/user-attachments/assets/f9c7deb0-a386-46d3-b6b0-944848bf7836)
+
+
