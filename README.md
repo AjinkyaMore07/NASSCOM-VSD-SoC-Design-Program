@@ -863,4 +863,26 @@ output :
 
 
 
-        
+*SPICE3 file created from sky130_inv.ext technology: sky130A
+option scale-0.01u
+include/libs/pshort.lib
+include/libs/nshort.lib
+//.subckt sky130 inv A Y VPWR VGND
+M1000 Y A VPWR VPWR pshort model. -37 1-23
++ 3d = 1443 pd = 152 as = 1517 ps = 156
+M1001 w = 35 1-23
++ ad = 1435 pd=152 as = 1.365 ps = 14B
+VOD 3.3V
+VSS VGND OBV
+Va A VGND PULSE (0V 3.3V 0 0.15 0.1ns 2ns 4ns)
+CO AY 0.051F
+C1 Y VPWR 0.11fF
+C2 A VPWR 0.07fF
+C3 Y 66.24
+C4 VPWR 0.59FF
+//.ends
+tran in 20
+.control
+run
+.endc
+end
