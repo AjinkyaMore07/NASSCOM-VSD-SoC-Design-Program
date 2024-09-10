@@ -888,7 +888,7 @@ _20 Percent of 3.3V is 0.660_
 
 ![80% 660](https://github.com/user-attachments/assets/f81af92a-6572-4805-b553-4d1ba589d6d9)
 
-# Rise Transition time = 6.16096 - 4.03964  = 2.12132ps
+_Rise Transition time = 6.16096 - 4.03964  = 2.12132ps_
 ![risetime calculation](https://github.com/user-attachments/assets/8f61236c-f1be-4c32-8e61-ad07e843092d)
 
 
@@ -909,7 +909,7 @@ _80 Percent of 3.3V is 2.64_
 _20 Percent of 3.3V is 0.660_
 ![fall transition 20 % 0 66](https://github.com/user-attachments/assets/53eab6db-a824-44c9-bc52-cffb5a5b5b3d)
 
-# FAll Transition time = 2.09-2.03  = 0.03 = 30ps
+ _FAll Transition time = 2.09-2.03  = 0.03 = 30ps_
 ![fall 80-20](https://github.com/user-attachments/assets/39e194b1-30b1-4877-9662-d3a0690b355c)
 
     
