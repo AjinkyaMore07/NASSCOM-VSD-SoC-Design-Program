@@ -939,3 +939,18 @@ _Fall Cell Delay_
 
 ---
 
+# _Lab introduction to magic and steps to load sky130 tech-rules_
+
+      1.  Go to home directory
+      2.  download the lab files
+              wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+      3. extract it
+              tar xfz drc_tests.tgz
+      4. Go to - cd drc_tests
+      5. to view .magicrc file
+         command : gvim .magicrc
+      6. Command to open magic tool in better graphics ->  magic -d XR &
+![sky130techrules](https://github.com/user-attachments/assets/f3782388-ceed-471b-8d03-e6b7223e6daf)
+
+
+![magicrcfile](https://github.com/user-attachments/assets/9f82d770-ff02-47ca-8ae0-4a00926da5cf)
