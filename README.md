@@ -1021,3 +1021,5 @@ solving poly.2 error - Spacing of poly to poly
 ---
 
 # _DAY4- Pre-Layout Timing Analysis_
+
+	1. Generate lef from the layout.
