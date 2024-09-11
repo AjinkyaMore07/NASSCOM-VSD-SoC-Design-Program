@@ -1024,6 +1024,7 @@ solving poly.2 error - Spacing of poly to poly
 
 	1. Generate lef from the layout.
  
+ 1st Requuirement : The input and output ports of the standard cell should lie on the intersection of the vertical and horizontal tracks.
  tracks.info of sky130_fd_sc_hd
 
 ![sky_130A_track_info](https://github.com/user-attachments/assets/5115610c-e9c7-495f-b3b2-077c6baeedd4)
@@ -1037,4 +1038,9 @@ input and output ports of the standard cell should lie on the intersection of th
 
 ---
 
+2nd Requirement
+	width of the standard cell must be odd multiple of the xpitch or xdirection
 
+
+---
+3rd Requriement Hight of the standard cell must be even multiple of the ydirection or ypitch
