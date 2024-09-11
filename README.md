@@ -1023,7 +1023,18 @@ solving poly.2 error - Spacing of poly to poly
 # _DAY4- Pre-Layout Timing Analysis_
 
 	1. Generate lef from the layout.
-tracks.info of sky130_fd_sc_hd
+ 
+ tracks.info of sky130_fd_sc_hd
 
+![sky_130A_track_info](https://github.com/user-attachments/assets/5115610c-e9c7-495f-b3b2-077c6baeedd4)
 
  tkcon window to set grid as tracks of locali layer
+![grid_command_terminal](https://github.com/user-attachments/assets/fe126ea2-2f7c-4abf-a80f-6857a3687a9a)
+
+input and output ports of the standard cell should lie on the intersection of the vertical and horizontal tracks.
+![after_grid](https://github.com/user-attachments/assets/32f79c44-dab1-4e4c-819b-b8f4be85cb2f)
+
+
+---
+
+
