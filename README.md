@@ -1040,7 +1040,20 @@ input and output ports of the standard cell should lie on the intersection of th
 
 2nd Requirement
 	width of the standard cell must be odd multiple of the xpitch or xdirection
+![horizontal_width](https://github.com/user-attachments/assets/215b233b-c51b-4839-8bcd-a74ac8072ea2)
 
+ W i d t h   o f   s t a n d a r d   c e l l = 1.38   u m = 0.46 ∗ 3 
 
 ---
-3rd Requriement Hight of the standard cell must be even multiple of the ydirection or ypitch
+3rd Requriement 
+	Hight of the standard cell must be even multiple of the ydirection or ypitch
+
+![vertical_height](https://github.com/user-attachments/assets/f70e95a7-7c17-48a8-a4f0-55a26be88107)
+
+H I G H T   o f   s t a n d a r d   c e l l = 1.38   u m = 0.46 ∗ 3 
+
+---
+Defining the Port 
+
+ tkcon window to save the layout with custom name
+ 	
