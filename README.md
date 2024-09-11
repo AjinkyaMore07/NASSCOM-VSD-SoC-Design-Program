@@ -1159,5 +1159,8 @@ my_base.sdc for STA analysis in openlane/designs/picorv32a/src
 
 ![my_sdc](https://github.com/user-attachments/assets/836ce71a-0d5d-4b46-9c7f-1ad763a83963)
 
+output of pre_sta.conf is equal to synthesis stage
+
+![openlaneoutput_negativeslace](https://github.com/user-attachments/assets/a0542931-4f42-44de-ac2a-9be371af96f0)
 
 
