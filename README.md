@@ -1081,3 +1081,70 @@ Edit 'config.tcl'
 	set ::env(LIB_TYPICAL) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
 
 	set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]
+ 
+ ![configedit](https://github.com/user-attachments/assets/79774496-72b2-45c5-a62d-adc537ff2ab5)
+
+openlane flow synthesis with newly inserted custom inverter cell.
+
+	steps
+ 	1. go to openlane directory : cd Desktop/work/tools/openlane_working_dir/openlane
+  	2. docker
+   	3. ./flow.tcl -interactive
+    	4. package require openlane 0.9
+        5. prep -design picorv32a -tag 24-03_10-03 -overwrite
+	6. set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+ 	7. add_lefs -src $lefs
+  	8. echo $::env(SYNTH_STRATEGY)
+   	9. set ::env(SYNTH_STRATEGY) "DELAY 3"
+    	10. echo $::env(SYNTH_BUFFERING)
+     	11. echo $::env(SYNTH_SIZING)
+      	12. set ::env(SYNTH_SIZING) 1
+        13. echo $::env(SYNTH_DRIVING_CELL)
+	14. run_synthesis
+	15. run_floorplan 
+ 		we will get error after error 
+   		1. init_floorplan
+     		2. place_io
+       		3. tap_decap_or
+	 16 run_placement
+  	17 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+
+![synth_overwrite](https://github.com/user-attachments/assets/f4f8f5be-b54d-4143-ab1f-0f3e036b5e02)
+
+	total negative slack =-711.59   and wrost negative slack = -23.89.
+![synthesis completed](https://github.com/user-attachments/assets/d8945cb4-4dc1-4024-848e-440913c13368)
+
+ after this performed steps are from 5 to 14 
+ ![zero _negative slack](https://github.com/user-attachments/assets/45ff0442-cc79-43da-ac51-0054f022661c)
+
+Now we got TNS and WNS = 0
+
+Now we perform floorplan 
+	run_floorplan
+ ![run_floorplan](https://github.com/user-attachments/assets/211c24f8-2bf4-432d-8621-53b3a68b92df)
+![error](https://github.com/user-attachments/assets/d0a4d661-c330-4897-9581-4db4c9b6dc65)
+
+after getting error run following commands
+
+	1. init_floorplan
+	2. place_io
+	3. tap_decap_or
+
+![init_floorplan](https://github.com/user-attachments/assets/7dd207eb-cdc5-46f3-a72c-9aacd4550f01)
+![tap_decap](https://github.com/user-attachments/assets/4197501d-032c-4f80-9959-ca21ae778ec5)
+
+Run_placement
+![run_placement](https://github.com/user-attachments/assets/d489e725-24d0-4a20-9004-3df4b07d8e27)
+![run_placement_complete](https://github.com/user-attachments/assets/6a99138e-6762-4292-ba33-9fd9ec003943)
+
+
+ load placement def in magic in other terminal
+ 
+![magic](https://github.com/user-attachments/assets/3178192e-fe35-4ebb-8f9d-0b8fccb98432)
+
+![vsdinv](https://github.com/user-attachments/assets/fcc38ff7-9a09-422c-82f2-38e9eb81becf)
+
+	 tkcon window to view internal layers of cells
+
+![expand](https://github.com/user-attachments/assets/2b868a31-917a-4845-8b1b-0bf315050a50)
+
