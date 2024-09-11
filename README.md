@@ -1072,3 +1072,12 @@ SKY_L3 - Introduction to timing libs and steps to include new cell in synthesis
 
 	1. Copy the new lef file to  /Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
 	2. Copy lib files "sky130_fd_sc_hd.lib" from vsdstdcelldesign/lib to /Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
+
+Edit 'config.tcl' 
+
+  	set ::env(LIB_SYNTH) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
+	set ::env(LIB_FASTEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib"
+	set ::env(LIB_SLOWEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib"
+	set ::env(LIB_TYPICAL) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
+
+	set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]
