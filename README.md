@@ -1066,4 +1066,9 @@ NEW Layout
 
  tkcon window to save the layout with custom name and new lef file
  ![lef_write_with all](https://github.com/user-attachments/assets/0147b96b-a224-4b31-9e40-54cf6bdfa200)
+---
 
+SKY_L3 - Introduction to timing libs and steps to include new cell in synthesis
+
+	1. Copy the new lef file to  /Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
+	2. Copy lib files "sky130_fd_sc_hd.lib" from vsdstdcelldesign/lib to /Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
