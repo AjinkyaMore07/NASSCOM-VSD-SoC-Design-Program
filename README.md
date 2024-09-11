@@ -1023,3 +1023,7 @@ solving poly.2 error - Spacing of poly to poly
 # _DAY4- Pre-Layout Timing Analysis_
 
 	1. Generate lef from the layout.
+tracks.info of sky130_fd_sc_hd
+
+
+ tkcon window to set grid as tracks of locali layer
