@@ -1091,7 +1091,7 @@ openlane flow synthesis with newly inserted custom inverter cell.
   	2. docker
    	3. ./flow.tcl -interactive
     	4. package require openlane 0.9
-        5. prep -design picorv32a -tag 24-03_10-03 -overwrite
+        5. prep -design picorv32a -tag 11-09_16-08 -overwrite
 	6. set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
  	7. add_lefs -src $lefs
   	8. echo $::env(SYNTH_STRATEGY)
@@ -1144,7 +1144,20 @@ Run_placement
 
 ![vsdinv](https://github.com/user-attachments/assets/fcc38ff7-9a09-422c-82f2-38e9eb81becf)
 
+---
 	 tkcon window to view internal layers of cells
 
 ![expand](https://github.com/user-attachments/assets/2b868a31-917a-4845-8b1b-0bf315050a50)
+
+---
+
+New created pre_sta.conf for STA analysis in openlane directory
+
+![pre_sta,conf](https://github.com/user-attachments/assets/65b23ef4-2caf-4d34-94ae-db122328daea)
+
+my_base.sdc for STA analysis in openlane/designs/picorv32a/src
+
+![my_sdc](https://github.com/user-attachments/assets/836ce71a-0d5d-4b46-9c7f-1ad763a83963)
+
+
 
