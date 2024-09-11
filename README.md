@@ -1054,6 +1054,16 @@ H I G H T   o f   s t a n d a r d   c e l l = 1.38   u m = 0.46 ∗ 3
 
 ---
 Defining the Port 
+![A_locali](https://github.com/user-attachments/assets/2a38a90c-b100-4b09-8b61-f951e7e7ac34)
+![y_locali](https://github.com/user-attachments/assets/c9b6dd3d-4105-4a11-935e-fd51c28e53ac)
+![vPWR](https://github.com/user-attachments/assets/7f1f2a34-2a7c-4531-920b-ec20da9b309d)
+![VGND](https://github.com/user-attachments/assets/44181246-dc51-4f5a-a4f0-118068f6b8ee)
 
- tkcon window to save the layout with custom name
- 	
+
+NEW Layout
+![new_mag](https://github.com/user-attachments/assets/215484a3-ae96-455e-8bc7-2a390840e140)
+
+
+ tkcon window to save the layout with custom name and new lef file
+ ![lef_write_with all](https://github.com/user-attachments/assets/0147b96b-a224-4b31-9e40-54cf6bdfa200)
+
