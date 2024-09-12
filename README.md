@@ -1,4 +1,4 @@
-![11675](https://github.com/user-attachments/assets/5a21f734-4cbe-4e59-9ba4-9558e56cb041)# Digital VLSI SoC Design and Planning
+# Digital VLSI SoC Design and Planning
 ---
 Sky130 Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK
 SKY130_D1_SK1 - How to talk to computers
@@ -1222,6 +1222,6 @@ Commands to write verilog
  ![write_Verilog](https://github.com/user-attachments/assets/9f9c2873-c84e-48b5-a46b-0249bb7f248c)
 
  Verified that the netlist is overwritten by checking that instance _14675
-![Uploading 11675.png…]()
- 
+![11675](https://github.com/user-attachments/assets/5a21f734-4cbe-4e59-9ba4-9558e56cb041)
 
+---
