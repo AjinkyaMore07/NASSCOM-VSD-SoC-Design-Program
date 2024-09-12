@@ -1,4 +1,4 @@
-# Digital VLSI SoC Design and Planning
+![11675](https://github.com/user-attachments/assets/5a21f734-4cbe-4e59-9ba4-9558e56cb041)# Digital VLSI SoC Design and Planning
 ---
 Sky130 Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK
 SKY130_D1_SK1 - How to talk to computers
@@ -1163,4 +1163,65 @@ output of pre_sta.conf is equal to synthesis stage
 
 ![openlaneoutput_negativeslace](https://github.com/user-attachments/assets/a0542931-4f42-44de-ac2a-9be371af96f0)
 
+Here vsdinverter gate  is driving 4 fanouts
+
+![or_gate_drive_strength_2_fanout_4](https://github.com/user-attachments/assets/ece2b905-229f-401a-9aa8-3002a3c075b8)
+
+command to optimize 
+
+	1. report_net -connections _10566_
+	2. replace_cell _10566_ sky130_fd_sc_hd__or3_4
+ 	3. report_checks -fields {net cap slew input_pins} -digits 4
+
+Befor optimizing
+
+![newslackviolated_23 90](https://github.com/user-attachments/assets/e101f3ee-5860-458d-ad39-a5e65dc7828a)
+
+
+After optimizing slack reduced
+![newslack_afteroptimizing](https://github.com/user-attachments/assets/fecfb920-a039-418e-a4dc-6028c88dbee3)
+
+or gate
+![new_orgate_4fanout_before_optimize](https://github.com/user-attachments/assets/90ea3c92-022f-4ee1-89ce-ea5d98b00015)
+
+
+
+Commands to perform analysis and optimize timing by replacing with OR gate of drive strength 4
+	
+ 	1. report_net -connections _11675_
+	2.replace_cell _14514_ sky130_fd_sc_hd__or3_4
+	3.report_checks -fields {net cap slew input_pins} -digits 4
+before total slack
+![befor_11675_total slack](https://github.com/user-attachments/assets/5d2ad9c8-a017-4c5c-a515-dd4bbe8049ef)
+
+after optimizaiton 
+![new_11675_delayreduced](https://github.com/user-attachments/assets/ec5f7127-ca64-4b40-aecb-6e10cbf5053f)
+
+or gate _11675_
+before
+![new_11675_before](https://github.com/user-attachments/assets/7ab9f400-3e64-4f64-abaa-0b39680c35ca)
+after
+![new_11675_delayreduced](https://github.com/user-attachments/assets/84ecb9d5-3632-4271-9764-3bfe95ba152b)
+
+
+We started ECO fixes at wns -23.90 and now we stand at wns 23.1405we reduced around 0.7595ns of violation
+---
+
+
+Replace the old netlist with the new netlist generated after timing ECO fix and implement the floorplan, placement and cts.
+
+![oldnetlist](https://github.com/user-attachments/assets/c9e9ede3-28fe-44e1-86e3-98a59c45bf0f)
+
+Commands to write verilog
+	
+ 	1.help write_verilog
+  	2.write_verilog /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/25-03_18-52/results/synthesis/picorv32a.synthesis.v
+	3. exit
+ Screenshot of commands run
+ 
+ ![write_Verilog](https://github.com/user-attachments/assets/9f9c2873-c84e-48b5-a46b-0249bb7f248c)
+
+ Verified that the netlist is overwritten by checking that instance _14675
+![Uploading 11675.png…]()
+ 
 
