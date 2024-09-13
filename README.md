@@ -1,4 +1,4 @@
-![5_read_def_output](https://github.com/user-attachments/assets/25486939-6264-4ae1-8eac-40d4a3445af8)# Digital VLSI SoC Design and Planning
+# Digital VLSI SoC Design and Planning
 ---
 Sky130 Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK
 SKY130_D1_SK1 - How to talk to computers
@@ -1279,3 +1279,6 @@ commands performed
  	exit
 
 #_removing 'sky130_fd_sc_hd__clkbuf_1' cell from clock buffer list variable 'CTS_CLK_BUFFER_LIST'_
+
+command for removing 
+	->  lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0 
