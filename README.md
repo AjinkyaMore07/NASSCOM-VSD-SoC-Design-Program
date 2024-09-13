@@ -1,4 +1,4 @@
-# Digital VLSI SoC Design and Planning
+![5_read_def_output](https://github.com/user-attachments/assets/25486939-6264-4ae1-8eac-40d4a3445af8)# Digital VLSI SoC Design and Planning
 ---
 Sky130 Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK
 SKY130_D1_SK1 - How to talk to computers
@@ -1238,4 +1238,44 @@ running _ cts
 generated cts file in "/home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/09-09_05-51/results/synthesis" 
 ![cts_generated](https://github.com/user-attachments/assets/23e30600-812b-40b2-b452-30db6ca739da)
 
+---
+#_POST_CTS_
 
+commands performed 
+	
+ 	1. openroad
+![1_openroad](https://github.com/user-attachments/assets/f76680b5-dfda-406f-914f-d47d732d1066)
+
+  	2. read_lef /openLANE_flow/designs/picorv32a/runs/09-09_05-51/tmp/merged.lef
+![2_read_lef ](https://github.com/user-attachments/assets/5ce81d93-ae1d-4a2b-87ba-9a2848bf4906)
+
+    	3. read_def /openLANE_flow/designs/picorv32a/runs/09-09_05-51/results/cts/picorv32a.cts.def
+![4_read_def](https://github.com/user-attachments/assets/22f78503-0bfd-4425-ad03-75017b1089e3)
+
+ 	4. write_db pico_cts.db
+![6_write_db pico_cts db](https://github.com/user-attachments/assets/7053030f-7d16-4d43-a570-a8d67799b441)
+  
+	5. read_db pico_cts.db
+![8_read_db pico_cts db](https://github.com/user-attachments/assets/98607303-3960-4ece-9089-6382a638d93e)
+	
+ 	6. read_verilog /openLANE_flow/designs/picorv32a/runs/09-09_05-51/results/synthesis/picorv32a.synthesis_cts.v
+![9_read_verilog](https://github.com/user-attachments/assets/90553625-3604-452e-afcc-1c620de7c0e2)
+  
+  	7. read_liberty $::env(LIB_SYNTH_COMPLETE) 
+![read_liberty $::env(LIB_SYNTH_COMPLETE)](https://github.com/user-attachments/assets/226a94b1-b0c2-4af1-8487-54c8f0ed992b)
+
+    	8. link_design picorv32a
+![10_link_design picorv32a](https://github.com/user-attachments/assets/d9c63f0b-1b72-42d8-9ef5-9f62615a045f)
+
+    	9. read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+![11_read_sdc ](https://github.com/user-attachments/assets/f00bb0c1-5d86-492e-8525-3ac3d179328b)
+
+	10. set_propagated_clock [all_clocks]
+![12_set_propagated_clock](https://github.com/user-attachments/assets/c3474d38-40da-4614-a861-74e1dfe963f5)
+
+	11. report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
+![13_report_checks_output](https://github.com/user-attachments/assets/fa5e5e2c-f55c-4b97-bff0-31b56757779c)
+
+ 	exit
+
+#_removing 'sky130_fd_sc_hd__clkbuf_1' cell from clock buffer list variable 'CTS_CLK_BUFFER_LIST'_
