@@ -1,4 +1,4 @@
-# Digital VLSI SoC Design and Planning
+![read_def_2ndtime](https://github.com/user-attachments/assets/29b672c4-1b9e-42fa-a7de-a78ba9b0d381)# Digital VLSI SoC Design and Planning
 ---
 Sky130 Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK
 SKY130_D1_SK1 - How to talk to computers
@@ -1281,4 +1281,28 @@ commands performed
 #_removing 'sky130_fd_sc_hd__clkbuf_1' cell from clock buffer list variable 'CTS_CLK_BUFFER_LIST'_
 
 command for removing 
-	->  lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0 
+	    
+     	1. echo $::env(CTS_CLK_BUFFER_LIST)
+      	2. set ::env(CTS_CLK_BUFFER_LIST)  lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0
+	3. echo $::env(CTS_CLK_BUFFER_LIST)
+ ![14_removed_clk_buf1](https://github.com/user-attachments/assets/6feed76b-c69e-40c2-9ee9-bb3f8b7b6eba)
+
+ Before running cts :
+ 
+ 	1. echo $::env(CURRENT_DEF)
+	2. set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/09-09_05-51/results/placement/picorv32a.placement.def
+![run_cts_before_placement_Cts](https://github.com/user-attachments/assets/00ed93b6-35d3-47d7-ba49-8668a24b4f98)
+![running_cts_afterplacement_def](https://github.com/user-attachments/assets/971ffd45-6d7d-484f-8136-c7df6581f039)
+
+completed running cts 
+![completed run_cts_2ndtime](https://github.com/user-attachments/assets/cc108d71-e2b5-4be1-bef4-b4c2fe145fe8)
+![read_def_2ndtime](https://github.com/user-attachments/assets/338fbfdf-2755-436d-8312-bbb96ef3acd5)
+
+![Screenshot from 2024-09-13 16-15-31](https://github.com/user-attachments/assets/70a58477-4c32-421a-ade2-040ad9e93e40)
+![hold](https://github.com/user-attachments/assets/72ce163f-952e-445d-abae-c174c37cd7d7)
+
+![slack timing](https://github.com/user-attachments/assets/58f6f87a-91ce-4fc9-8a31-fed9a0261f40)
+
+![alldone](https://github.com/user-attachments/assets/df046b6e-4aea-444c-87b5-b8fd27e5c9a7)
+
+
