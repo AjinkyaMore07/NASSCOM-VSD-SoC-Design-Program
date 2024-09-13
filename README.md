@@ -1215,13 +1215,27 @@ Replace the old netlist with the new netlist generated after timing ECO fix and 
 Commands to write verilog
 	
  	1.help write_verilog
-  	2.write_verilog /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/25-03_18-52/results/synthesis/picorv32a.synthesis.v
+  	2.write_verilog /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/09-09_05-51/results/synthesis/picorv32a.synthesis.v
 	3. exit
  Screenshot of commands run
  
  ![write_Verilog](https://github.com/user-attachments/assets/9f9c2873-c84e-48b5-a46b-0249bb7f248c)
 
- Verified that the netlist is overwritten by checking that instance _14675
+ Verified that the netlist is overwritten by checking that instance _14675_
 ![11675](https://github.com/user-attachments/assets/5a21f734-4cbe-4e59-9ba4-9558e56cb041)
 
 ---
+
+we confirmed that netlist is replaced and will be loaded in PnR  , since we want to go with  0 violation design we will continuing with the clean design .
+![slackzero](https://github.com/user-attachments/assets/2175ef0a-6405-4fbf-809d-fc2205f46840)
+
+placement done 
+![placementdone](https://github.com/user-attachments/assets/7690a971-24fd-4e06-86c9-ef97e8d4e4e3)
+
+running _ cts
+![run_Cts](https://github.com/user-attachments/assets/2f7731cf-a91c-43a0-8166-80d1e61327e9)
+
+generated cts file in "/home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/09-09_05-51/results/synthesis" 
+![cts_generated](https://github.com/user-attachments/assets/23e30600-812b-40b2-b452-30db6ca739da)
+
+
