@@ -1,4 +1,4 @@
-![read_def_2ndtime](https://github.com/user-attachments/assets/29b672c4-1b9e-42fa-a7de-a78ba9b0d381)# Digital VLSI SoC Design and Planning
+# Digital VLSI SoC Design and Planning
 ---
 Sky130 Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK
 SKY130_D1_SK1 - How to talk to computers
