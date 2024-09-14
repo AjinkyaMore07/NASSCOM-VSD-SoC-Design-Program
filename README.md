@@ -1346,3 +1346,14 @@ command used :
 
 ![rouutinggg1](https://github.com/user-attachments/assets/30f07431-1808-4bd6-8d36-4cbf6bec4f4d)
 
+![rouutinggg1](https://github.com/user-attachments/assets/bf173ce5-b4a2-470b-a8d1-170b323e82bf)
+
+
+Fast route guide file 
+
+![guide](https://github.com/user-attachments/assets/6fac3c73-7aa9-4657-97bf-853214264d34)
+
+completion of routing
+
+![fjinish](https://github.com/user-attachments/assets/6e02497f-a5eb-4279-8af4-0a856a3cf617)
+
