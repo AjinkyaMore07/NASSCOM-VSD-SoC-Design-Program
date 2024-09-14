@@ -1,4 +1,4 @@
-# Digital VLSI SoC Design and Planning
+![1](https://github.com/user-attachments/assets/25341ed6-b811-407b-8afb-da26bb87d1e0)# Digital VLSI SoC Design and Planning
 ---
 Sky130 Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK
 SKY130_D1_SK1 - How to talk to computers
@@ -1316,6 +1316,34 @@ SKY_L1 - Lab steps to build power distribution network
 
 command used : 
 
- 	1. 
+ 	1. Go to openlane directory : cd Desktop/work/tools/openlane_working_dir/openlane
+	2. Type : Docker
+ 	3. Invode openlane : ./flow.tcl -interactive
+  	4. package require openlane 0.9
+	5. prep -design picorv32a -tag 09-09_05-51 
+ 	6. echo $::env(CURRENT_DEF)
+  
+![1](https://github.com/user-attachments/assets/f51883d8-c04e-4e94-976d-6583d9012301)
 
-# 
+	7. gen_pdn
+ 	
+![gen_pdn](https://github.com/user-attachments/assets/b0901c20-a811-4993-9eae-24180c6a1399)
+
+![gen_success](https://github.com/user-attachments/assets/2ec5693f-49cd-4701-9129-f0c544c8fbcb)
+
+
+![pdf def](https://github.com/user-attachments/assets/8916cee8-11e2-446d-b5da-ab998b22985d)
+
+	Def file generated :
+![deffilegeneratded](https://github.com/user-attachments/assets/51004449-0291-4d52-a8ce-8b658c293ce6)
+
+	pdn def in magic 
+
+![magic](https://github.com/user-attachments/assets/6031f0c0-78ee-4838-91ee-a629fdcb1b69)
+
+	running routing using - command - "run_routing"	
+ 
+![runrouting](https://github.com/user-attachments/assets/14b53fed-a947-4a22-9a9f-712f338ec7e1)
+
+![rouutinggg1](https://github.com/user-attachments/assets/30f07431-1808-4bd6-8d36-4cbf6bec4f4d)
+
