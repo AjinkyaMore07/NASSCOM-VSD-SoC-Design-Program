@@ -1308,4 +1308,14 @@ completed running cts
 
 ---
 
+# _Sky130 Day 5 - Final steps for RTL2GDS using tritonRoute and openSTA_
+
+---
+
+SKY_L1 - Lab steps to build power distribution network
+
+command used : 
+
+ 	1. 
+
 # 
